@@ -3,7 +3,7 @@
 
 /**** Connecting styles ****/
 @import url(header.css);
-
+@import url(about.css);
 
 /**** Setting basics ****/
 *{
@@ -40,6 +40,7 @@ a{
         padding: 0;
         background-size: 100vh;
     }
+    /**** HEADER ****/
     .header{
         height: auto;
     }
@@ -62,7 +63,6 @@ a{
     .header__link{
         font-size: 22px;
     }
-    
 
     .header__content{
         height: inherit;
@@ -83,9 +83,27 @@ a{
     .header__soldier{
         display: none;
     }
+
+
+    /**** ABOUT ****/
+    .about{
+        flex-direction: column;
+        padding: 20px 40px;
+    }
+    .about__col{
+        width: 100%;
+        margin: 15px 0px;
+    }
+    .about__title{
+        text-align: center;
+    }
+    .about__text{
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 640px) {
+    /**** HEADER ****/
     .header__logo-title{
         font-size: 20px;
     }
@@ -104,7 +122,6 @@ a{
     .header__link{
         font-size: 18px;
     }
-
 
     .header__content{
         padding: 0px 10px;
@@ -129,5 +146,11 @@ a{
     }
     .header__btn-video::after{
         font-size: 16px;
+    }
+
+
+    /**** ABOUT ****/
+    .about{
+        padding: 20px 25px;
     }
 }

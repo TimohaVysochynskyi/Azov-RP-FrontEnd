@@ -1,3 +1,4 @@
+/**** Header burger menu ****/
 $(document).ready(function () {
 	let menuStatus = 0;
 	$(".header__burger").click(function () {
@@ -18,6 +19,7 @@ $(document).ready(function () {
 	});
 });
 
+/**** Header soldier movement ****/
 document.addEventListener("mousemove", parallax);
 function parallax(event) {
 	this.querySelectorAll(".header__soldier").forEach((shift) => {
@@ -26,4 +28,29 @@ function parallax(event) {
 		const y = (window.innerHeight - event.pageY * position) / 90;
 		shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
 	});
+}
+
+/**** Videoplayer settings ****/
+const play = `<img src="./images/about-play.png" alt="Play">`;
+const pause = `<div style="width: 350px; height: 350px"></div>`;
+
+const playButton = document.querySelector('.about__video-play-button');
+const video = document.querySelector('.about__videoplayer');
+const videoContainer = document.querySelector('.about__video');
+
+playButton.addEventListener('click', function () {
+    if (video.paused) {
+        video.play();
+        videoContainer.classList.add('playing');
+		playButton.style.width = '100%';
+		playButton.style.heigh = '100%';
+        playButton.innerHTML = pause;
+    } else {
+        video.pause();
+        videoContainer.classList.remove('playing');
+        playButton.innerHTML = play;
+    }
+})
+video.onended = function () {
+    playButton.innerHTML = play;
 }
