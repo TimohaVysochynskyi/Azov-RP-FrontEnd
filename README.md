@@ -1,2 +1,1 @@
 # Azov-RP-FrontEnd
-g
