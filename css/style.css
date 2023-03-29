@@ -1,0 +1,133 @@
+/**** Connecting fonts ****/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/**** Connecting styles ****/
+@import url(header.css);
+
+
+/**** Setting basics ****/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+    padding: 0px 10vw;
+    /*height: 400vh;*/
+}
+h1, h2, h3{
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+}
+
+
+/**** ADAPTIVE STYLES ****/
+@media screen and (max-width: 769px) {
+    body{
+        padding: 0;
+        background-size: 100vh;
+    }
+    .header{
+        height: auto;
+    }
+    .header__nav{
+        flex-direction: column;
+    }
+    .header__burger{
+        display: unset;
+    }
+    .header__list{
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        margin: 20px 0px;
+        display: none;
+    }
+    .header__item{
+        margin: 16px 0px;
+    }
+    .header__link{
+        font-size: 22px;
+    }
+    
+
+    .header__content{
+        height: inherit;
+        width: 100%;
+        padding: 30px 20px;
+    }
+    .header__title{
+        text-align: center;
+        font-size: 42px;
+    }
+    .header__description{
+        text-align: center;
+    }
+    .header__btns,
+    .header__servers{
+        justify-content: center;
+    }
+    .header__soldier{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .header__logo-title{
+        font-size: 20px;
+    }
+    .header__burger{
+        right: 2vh;
+        top: 5vh;
+    }
+    .header__burger-line{
+        width: 26px;
+        height: 4px;
+        margin: 5px 0px;
+    }
+    .header__item{
+        margin: 10px 0px;
+    }
+    .header__link{
+        font-size: 18px;
+    }
+
+
+    .header__content{
+        padding: 0px 10px;
+    }
+    .header__title{
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .header__description{
+        font-size: 18px;
+    }
+    .header__btns,
+    .header__servers{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__btns a,
+    .header__servers li{
+        margin: 10px 0px;
+        width: 90%;
+        justify-content: center;
+    }
+    .header__btn-video::after{
+        font-size: 16px;
+    }
+}
