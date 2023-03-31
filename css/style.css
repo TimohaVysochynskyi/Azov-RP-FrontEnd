@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /**** Connecting styles ****/
-@import url(header.css);
+@import url(header&footer.css);
 @import url(about.css);
 
 /**** Setting basics ****/
@@ -23,8 +23,13 @@ body{
     background-repeat: no-repeat;
     background-position-x: center;
 
-    padding: 0px 10vw;
     /*height: 400vh;*/
+}
+.header,
+.about,
+.play,
+.footer{
+    padding: 0px 10vw;
 }
 h1, h2, h3{
     text-transform: uppercase;
@@ -100,6 +105,27 @@ a{
     .about__text{
         margin-top: 10px;
     }
+
+
+    /**** FOOTER ****/
+    .footer__content{
+        flex-direction: column;
+    }
+    .footer__nav{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .footer__list{
+        margin: 20px 0px;
+    }
+    .footer__payments{
+        width: 100%;
+        justify-content: center;
+    }
+    .footer__payments li{
+        flex: unset;
+        margin: 10px 25px;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -153,4 +179,5 @@ a{
     .about{
         padding: 20px 25px;
     }
+
 }

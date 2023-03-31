@@ -1,3 +1,5 @@
+
+/******** HEADER ********/
 .header{
     width: calc(100vw-(10vw*2));
     height: 100vh;
@@ -194,4 +196,60 @@
     100%{
         transform: scale(1);
     }
+}
+
+
+
+
+/******** FOOTER ********/
+
+.footer{
+    background-color: #282C45;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10vh;
+    padding: 5vh 10vw !important;
+}
+.footer__title{
+    font-size: 18px;
+    letter-spacing: 1.2px;
+}
+.footer__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5vh;
+    width: 100%;
+}
+.footer__nav{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__list{
+    list-style: none;
+}
+.footer__list li{
+    line-height: 27px;
+}
+.footer__link{
+    letter-spacing: .8px;
+    font-size: 14px;
+}
+.footer__payments{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 20%;
+}
+.footer__payments li{
+    flex: 50%;
+}
+.footer__payment-method{
+    width: 64px;
 }
