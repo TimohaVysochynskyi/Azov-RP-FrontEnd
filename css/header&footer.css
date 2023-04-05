@@ -1,7 +1,6 @@
 
 /******** HEADER ********/
 .header{
-    width: calc(100vw-(10vw*2));
     height: 100vh;
     position: relative;
 }
@@ -33,7 +32,7 @@
 }
 .header__burger{
     position: absolute;
-    top: 4vh;
+    top: 3vh;
     right: 8vw;
     font-size: 64px;
     font-weight: 300;
@@ -82,48 +81,15 @@
     flex-direction: column;
     justify-content: center;
 }
-.header__title{
-    font-size: 48px;
-}
-.header__title span {
-    color: #0EEF8A;
-}
 .header__description{
     font-size: 18px;
     margin: 20px 0px;
     line-height: 26px;
 }
-
-
-.header__btns{
+.header__btns {
     display: flex;
     align-items: center;
     margin: 4vh 0px;
-}
-.header__btn-play{
-    display: flex;
-    align-items: center;
-    padding: 18px 30px;
-    font-size: 32px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: .6px;
-    background: linear-gradient(180deg, #15FD95 0%, #02D978 100%);
-    box-shadow: 0px 3px 0px #008649;
-    color: #0A0A14;
-    border-radius: 10px;
-    margin-right: 50px;
-    transition: .3s;
-}
-.header__btn-play img{
-    height: 26px;
-    margin-right: 15px;
-}
-.header__btn-play:hover{
-    background: linear-gradient(45deg, #02D978 0%, #15FD95 100%);
-    box-shadow: 0px -3px 0px #008649;
-    transform: scale(1.02);
-    transition: .3s;
 }
 .header__btn-video{
     display: flex;
