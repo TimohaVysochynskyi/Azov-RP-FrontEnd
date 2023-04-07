@@ -204,6 +204,11 @@
 .footer__link{
     letter-spacing: .8px;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.footer__link img{
+    margin-right: 10px;
 }
 .footer__payments{
     display: flex;

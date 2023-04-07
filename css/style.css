@@ -20,7 +20,7 @@ html{
 }
 body{
     overflow-x: hidden;
-    background-image: url(../images/background.png);
+    background-image: url(../images/main/background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -97,7 +97,7 @@ a{
         padding: 2vh 5vw;
         background-color: #161929;
         position: fixed;
-        top: 15px;
+        top: 0;
         left: 0;
         width: 100%;
         z-index: 4;
