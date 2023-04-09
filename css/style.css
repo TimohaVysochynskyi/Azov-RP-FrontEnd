@@ -81,7 +81,7 @@ a{
 /**** ADAPTIVE STYLES ****/
 @media screen and (max-width: 769px) {
     .header{
-        padding: 0px 4vw;
+        padding: 0px 8vw;
     }
     body{
         padding: 0;
@@ -146,6 +146,9 @@ a{
         flex-direction: column;
         padding: 20px 40px;
         margin-top: 20px;
+    }
+    .about__swiper-slide{
+        flex-direction: column;
     }
     .about__col{
         width: 100%;
@@ -295,6 +298,20 @@ a{
     .about{
         padding: 20px 25px;
     }
+    .about__swiper-button-next,
+    .about__swiper-button-prev {
+        margin-top: 27% !important;
+        transform: scale(0.85);
+    }
+
+    .about__swiper-button-next {
+        right: 2vw !important;
+    }
+
+    .about__swiper-button-prev {
+        left: 2vw !important;
+    }
+
 
     /**** PLAY ****/
     .play__item-message{

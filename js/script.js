@@ -36,6 +36,21 @@ function parallax(event) {
   });
 }
 
+/**** About Swiper settings ****/
+var swiper = new Swiper(".about__swiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".about__swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".about__swiper-button-next",
+    prevEl: ".about__swiper-button-prev",
+  },
+});
+
 /**** Videoplayer settings ****/
 const play = `<img src="./images/about-play.png" alt="Play">`;
 const pause = `<div style="width: 350px; height: 350px"></div>`;
