@@ -1,0 +1,146 @@
+h1{
+    margin: 5vh 0 4vh 0;
+}
+section{
+    margin: 2vh 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.user__avatar{
+    width: 94px;
+    height: 94px;
+    margin-right: 32px;
+    border-radius: 10px;
+}
+.user__name,
+.user__code{
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 15px 0px;
+    letter-spacing: 1px;
+}
+.settings__btn{
+    width: 64px;
+    height: 64px;
+    background: #131521;
+    border: 1px solid #282C45;
+    border-radius: 10px;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.settings__btn:hover{
+    background: #131521;
+    border-radius: 10px;
+    box-shadow: none;
+}
+.settings__btn img{
+    width: 32px;
+    height: 32px;
+}
+
+
+
+.status-wrapper,
+.password-wrapper{
+    background-color: #131521;
+    border: 1px solid #282C45;
+    border-radius: 10px;
+    margin: 12vh 10vw;
+    padding: 30px;
+    justify-content: space-around;
+}
+.status-wrapper div p{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+.status__title{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.status__text{
+    letter-spacing: .6px;
+}
+
+
+
+.navigation{
+    display: flex;
+    justify-content: center;
+}
+.navigation__item{
+    margin: 0px 3vw;
+    list-style: none;
+    background-color: #131521;
+    border: 1px solid #282C45;
+    border-radius: 10px;
+    padding: 10px;
+}
+.navigation__item a img{
+    width: 38px;
+}
+
+
+
+.password-wrapper{
+    flex-direction: column;
+    padding: 30px 70px;
+}
+.password-wrapper div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+}
+.password-title{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+.password-input{
+    padding: 12px 18px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    width: 60%;
+    background: none;
+    border: 1px solid #282C45;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+/**** ADAPTIVE STYLES ****/
+@media screen and (max-width: 769px) {
+    .status__title{
+        font-size: 18px;
+    }
+    .status__text{
+        font-size: 16px;
+    }
+    .navigation-wrapper{
+        margin: -5vh 0;
+    }
+    .password-wrapper div{
+        flex-direction: column;
+        margin: 12px 0px;
+    }
+    .password-title{
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    .password-input{
+        width: 100%;
+    }
+}

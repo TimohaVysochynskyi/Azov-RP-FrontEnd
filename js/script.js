@@ -37,7 +37,7 @@ function parallax(event) {
 }
 
 /**** About Swiper settings ****/
-var swiper = new Swiper(".about__swiper", {
+let about_swiper = new Swiper(".about__swiper", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,

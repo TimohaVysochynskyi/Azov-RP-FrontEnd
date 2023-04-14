@@ -12,23 +12,35 @@
 
 <body>
 
-    <h1 class="wow fadeInBottom">Особистий кабінет</h1>
-    <form action="" method="post">
-        <label for="nackname" class="wow fadeInLeft">
-            <img src="../images/redirecting-donate&panel/nickname.png">
-            <input type="text" id="nickname" name="nickname" placeholder="Введіть нікнейм">
-        </label>
-        <label for="password" class="wow fadeInRight">
-            <img src="../images/redirecting-donate&panel/password.png">
-            <input type="password" id="password" name="password" placeholder="Введіть пароль">
-        </label>
-        <button type="submit" class="wow fadeInUp">увійти</button>
-    </form>
+    <main>
+        <h1 class="wow fadeInBottom">Особистий кабінет</h1>
+        <form action="#" method="post" class="login-form">
+            <label for="nackname" class="wow fadeInLeft login-label">
+                <img src="../images/redirecting-donate&panel/nickname.png">
+                <input type="text" id="nickname" name="nickname" placeholder="Введіть нікнейм" class="login-input">
+            </label>
+            <label for="password" class="wow fadeInRight login-label">
+                <img src="../images/redirecting-donate&panel/password.png">
+                <input type="password" id="password" name="password" placeholder="Введіть пароль" class="login-input">
+            </label>
+            <!--<button type="submit" id="login-button" class="wow fadeInUp">увійти</button>-->
+            <a href="javascript:void(0)" id="login-button" class="wow fadeInUp login-btn">увійти</a>
+        </form>
+    </main>
 
     <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="../js/script.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#login-button").click(function () {
+                $("body").load("./cabinet.html");
+                document.querySelector("body").style.backgroundImage = "url('../images/main/background.png')";
+            });
+        });
+    </script>
 </body>
 
 </html>

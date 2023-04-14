@@ -10,7 +10,7 @@
     color: #ffffff;
 }
 
-body{
+main {
     height: 100vh;
     background-image: url(../images/redirecting-donate&panel/background.png);
     background-size: cover;
@@ -19,18 +19,23 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0px 5px;
 }
-h1{
+
+h1 {
     text-transform: uppercase;
     font-size: 44px;
+    text-align: center;
     margin-bottom: 8vh;
 }
-form{
+
+.login-form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-label{
+
+.login-label {
     padding: 14px 20px;
     width: 30vw;
     background: #131521;
@@ -42,23 +47,29 @@ label{
     align-items: center;
     justify-content: space-between;
 }
-label img{
+
+.login-label img {
     height: 45px;
 }
-input{
+
+.login-input {
     height: 100%;
     width: 84%;
     background: none;
     border: none;
     outline: none;
     font-size: 18px;
+    letter-spacing: 1px;
     font-weight: 500;
 }
-input::placeholder{
+
+.login-input::placeholder {
     color: #cdcdcd;
     opacity: 1;
 }
-button{
+
+.login-btn,
+.login-btn {
     margin-top: 2vh;
     padding: 18px 30px;
     font-size: 32px;
@@ -70,9 +81,13 @@ button{
     color: #0A0A14;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
+    text-decoration: none;
     transition: .3s;
 }
-button:hover{
+
+.login-btn:hover,
+.login-btn:hover {
     background: linear-gradient(45deg, #02D978 0%, #15FD95 100%);
     box-shadow: 0px -3px 0px #008649;
     transform: scale(1.02);
@@ -83,19 +98,23 @@ button:hover{
 
 /**** ADAPTIVE STYLES ****/
 @media screen and (max-width: 769px) {
-    label{
+    .login-label {
         width: 90vw;
     }
 }
+
 @media screen and (max-width: 640px) {
-    h1{
+    h1 {
         font-size: 36px;
         margin-bottom: 4vh;
     }
-    label img{
-        width: 32px;
+
+    .login-label img {
+        height: 32px;
     }
-    button{
+
+    .login-btn,
+    .login-btn {
         font-size: 27px;
     }
 }
