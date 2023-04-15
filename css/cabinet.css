@@ -109,6 +109,7 @@ section{
 
 /**** PASSWORD ****/
 .password-wrapper{
+    display: none;
     flex-direction: column;
     padding: 30px 70px;
 }
@@ -144,6 +145,7 @@ section{
 
 /**** DATA ****/
 .data-wrapper{
+    display: none;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -169,7 +171,7 @@ section{
 
 /**** ACHIEVMENT ****/
 .achievment-wrapper{
-    display: flex;
+    display: none;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -187,7 +189,6 @@ section{
 }
 .achievment:hover{
     transform: scale(1.02);
-    cursor: pointer;
 }
 .achievment__img{
     width: 64px;

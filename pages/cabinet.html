@@ -38,18 +38,23 @@
 
 <nav class="navigation-wrapper wow fadeInUp">
     <ul class="navigation">
-        <li class="navigation__item"><a href="javascript:void(0)"><img src="../images/cabinet/guns.png"
-                    alt="Досягнення"></a></li>
-        <li class="navigation__item"><a href="javascript:void(0)"><img src="../images/cabinet/key.png" alt="Паролі"></a>
+        <li class="navigation__item">
+            <a href="#achievment-wrapper" id="achievments-link"><img src="../images/cabinet/guns.png"
+                    alt="Досягнення"></a>
         </li>
-        <li class="navigation__item"><a href="javascript:void(0)"><img src="../images/cabinet/settings.png"
-                    alt="Налаштування"></a></li>
-        <li class="navigation__item"><a href="javascript:void(0)"><img src="../images/cabinet/info.png"
-                    alt="Інформація"></a></li>
+        <li class="navigation__item">
+            <a href="#password-wrapper" id="password-link"><img src="../images/cabinet/key.png" alt="Паролі"></a>
+        </li>
+        <li class="navigation__item">
+            <a href="javascript:void(0)"><img src="../images/cabinet/settings.png" alt="Налаштування"></a>
+        </li>
+        <li class="navigation__item">
+            <a href="#data-wrapper" id="data-link"><img src="../images/cabinet/info.png" alt="Інформація"></a>
+        </li>
     </ul>
 </nav>
 
-<section class="password-wrapper">
+<section class="password-wrapper" id="password-wrapper">
     <div>
         <p class="password-title wow fadeInLeft">новий пароль:</p>
         <input type="text" class="password-input" placeholder="QUERTY123">
@@ -60,7 +65,7 @@
     </div>
 </section>
 
-<section class="data-wrapper">
+<section class="data-wrapper" id="data-wrapper">
     <ul class="data__list wow fadeInLeft">
         <li class="data__item">Ім'я: <span>Lincoln Anderson</span></li>
         <li class="data__item">Рівень: <span>1</span></li>
@@ -79,7 +84,7 @@
     </ul>
 </section>
 
-<section class="achievment-wrapper">
+<section class="achievment-wrapper" id="achievment-wrapper">
     <div class="achievment wow fadeInLeft">
         <img src="../images/cabinet/achieve-pistol.png" alt="Іконка" class="achievment__img">
         <div class="achievment__progress">
@@ -131,8 +136,5 @@
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
-<script>
-    /**** Animations on scrolling ****/
-    new WOW().init();
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="../js/cabinet.js"></script>
