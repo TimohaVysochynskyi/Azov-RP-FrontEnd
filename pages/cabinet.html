@@ -5,40 +5,38 @@
     <title>Azov RP | Особистий кабінет</title>
     <link rel="stylesheet" href="../css/cabinet.css">
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/wow.css">
 </head>
 
-<body>
-
-</body>
 <h1>особистий кабінет</h1>
 
 <section class="user-wrapper">
     <div class="user">
-        <div><img src="../images/cabinet/avatar.png" alt="Avatar" class="user__avatar"></div>
-        <div>
+        <div class="wow fadeInLeft"><img src="../images/cabinet/avatar.png" alt="Avatar" class="user__avatar"></div>
+        <div class="wow fadeInLeft">
             <p class="user__name">Lincoln Anderson</p>
             <p class="user__code">#411</p>
         </div>
     </div>
-    <a href="#" class="settings__btn"><img src="../images/cabinet/settings.png"></a>
+    <a href="#" class="settings__btn wow fadeInRight"><img src="../images/cabinet/settings.png"></a>
 </section>
 
 <section class="status-wrapper">
-    <div>
+    <div class="wow fadeInLeft">
         <p class="status__title">останній вхід</p>
         <p class="status__text">2023-01-22</p>
     </div>
-    <div>
+    <div class="wow fadeInDown">
         <p class="status__title">стан</p>
         <p class="status__text">не в грі</p>
     </div>
-    <div>
+    <div class="wow fadeInRight">
         <p class="status__title">останній айпі</p>
         <p class="status__text">78.25.4.236</p>
     </div>
 </section>
 
-<nav class="navigation-wrapper">
+<nav class="navigation-wrapper wow fadeInUp">
     <ul class="navigation">
         <li class="navigation__item"><a href="javascript:void(0)"><img src="../images/cabinet/guns.png"
                     alt="Досягнення"></a></li>
@@ -53,11 +51,88 @@
 
 <section class="password-wrapper">
     <div>
-        <p class="password-title">новий пароль:</p>
+        <p class="password-title wow fadeInLeft">новий пароль:</p>
         <input type="text" class="password-input" placeholder="QUERTY123">
     </div>
     <div>
-        <p class="password-title">повторити пароль:</p>
+        <p class="password-title wow fadeInRight">повторити пароль:</p>
         <input type="text" class="password-input" placeholder="QUERTY123">
     </div>
 </section>
+
+<section class="data-wrapper">
+    <ul class="data__list wow fadeInLeft">
+        <li class="data__item">Ім'я: <span>Lincoln Anderson</span></li>
+        <li class="data__item">Рівень: <span>1</span></li>
+        <li class="data__item">Готівка: <span>560$</span></li>
+        <li class="data__item">Номер телефону: <span>987654321</span></li>
+        <li class="data__item">Донат рахунок: <span>10грн</span></li>
+        <li class="data__item">Банківський рахунок: <span>1000$</span></li>
+    </ul>
+    <ul class="data__list wow fadeInRight">
+        <li class="data__item">Стать: <span>Чоловіча</span></li>
+        <li class="data__item">Бізнес: <span>Відсутній</span></li>
+        <li class="data__item">Будинок: <span>Відсутній</span></li>
+        <li class="data__item">Статус VIP: <span>Відсутній</span></li>
+        <li class="data__item">Фракція: <span>LSPD</span></li>
+        <li class="data__item">Ранг: <span>Шеф</span></li>
+    </ul>
+</section>
+
+<section class="achievment-wrapper">
+    <div class="achievment wow fadeInLeft">
+        <img src="../images/cabinet/achieve-pistol.png" alt="Іконка" class="achievment__img">
+        <div class="achievment__progress">
+            <div style="width: 25%"></div>
+            <div style="width: 75%"></div>
+        </div>
+        <span class="achievment__percent">25%</span>
+    </div>
+    <div class="achievment wow fadeInRight">
+        <img src="../images/cabinet/achieve-mp5.png" alt="Іконка" class="achievment__img">
+        <div class="achievment__progress">
+            <div style="width: 75%"></div>
+            <div style="width: 25%"></div>
+        </div>
+        <span class="achievment__percent">75%</span>
+    </div>
+    <div class="achievment wow fadeInLeft">
+        <img src="../images/cabinet/achieve-shotgun.png" alt="Іконка" class="achievment__img">
+        <div class="achievment__progress">
+            <div style="width: 50%"></div>
+            <div style="width: 50%"></div>
+        </div>
+        <span class="achievment__percent">50%</span>
+    </div>
+    <div class="achievment wow fadeInRight">
+        <img src="../images/cabinet/achieve-pistol.png" alt="Іконка" class="achievment__img">
+        <div class="achievment__progress">
+            <div style="width: 40%"></div>
+            <div style="width: 60%"></div>
+        </div>
+        <span class="achievment__percent">40%</span>
+    </div>
+    <div class="achievment wow fadeInLeft">
+        <img src="../images/cabinet/achieve-rifle.png" alt="Іконка" class="achievment__img">
+        <div class="achievment__progress">
+            <div style="width: 85%"></div>
+            <div style="width: 15%"></div>
+        </div>
+        <span class="achievment__percent">85%</span>
+    </div>
+    <div class="achievment wow fadeInRight">
+        <img src="../images/cabinet/achieve-mp5.png" alt="Іконка" class="achievment__img">
+        <div class="achievment__progress">
+            <div style="width: 100%"></div>
+            <div style="width: 0%"></div>
+        </div>
+        <span class="achievment__percent">100%</span>
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<script>
+    /**** Animations on scrolling ****/
+    new WOW().init();
+</script>
