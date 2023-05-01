@@ -1,6 +1,9 @@
 /**** Setting basics ****/
 body{
     overflow-x: hidden;
+    background-size: cover;
+    background-position: top;
+    background-image: url(../images/cabinet/background.png);
 }
 h1{
     margin: 5vh 0 4vh 0;
@@ -276,7 +279,13 @@ section{
         font-size: 12px;
     }
     .navigation-wrapper{
-        margin: 5vh 5vw;
+        margin: 5vh 10vw;
+    }
+    .navigation{
+        flex-wrap: wrap;
+    }
+    .navigation__item{
+        margin: 20px;
     }
     .password-title{
         font-size: 16px;
