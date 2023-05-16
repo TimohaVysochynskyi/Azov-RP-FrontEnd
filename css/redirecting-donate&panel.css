@@ -10,9 +10,10 @@
     color: #ffffff;
 }
 body {
-    background-image: url(../images/redirecting-donate&panel/background.png);
-    background-size: cover;
-        background-position: center;
+    background-image: url(../images/redirecting-donate&panel/background.png) !important;
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
 }
 
 .header{
