@@ -4,13 +4,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Azov RP | Особистий кабінет</title>
     <link rel="stylesheet" href="../css/cabinet.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/redirecting-donate&panel.css">
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/wow.css">
 </head>
 
 <body>
-    <h1>особистий кабінет</h1>
+    <header class="header">
+        <nav class="header__nav">
+            <a class="header__burger" href="javascript:void(0)">
+                <div class="header__burger-line"></div>
+                <div class="header__burger-line"></div>
+                <div class="header__burger-line"></div>
+            </a>
+            <ul class="header__list">
+                <li class="header__item"><a href="../" class="header__link header__link-active">головна</a></li>
+                <li class="header__item"><a href="./donate.html" class="header__link">донат</a></li>
+                <li class="header__item"><a href="./panel.html" class="header__link">особистий кабінет</a></li>
+                <li class="header__item"><a href="#" class="header__link">форум</a></li>
+            </ul>
+        </nav>
+        <h1>особистий кабінет</h1>
+    </header>
 
     <section class="user-wrapper">
         <div class="user">
@@ -144,4 +160,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="../js/cabinet.js"></script>
+    <script src="../js/script.js"></script>
 </body>

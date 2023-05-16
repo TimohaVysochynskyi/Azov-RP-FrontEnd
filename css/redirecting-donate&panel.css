@@ -9,12 +9,23 @@
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
 }
-
-main {
-    height: 100vh;
+body {
     background-image: url(../images/redirecting-donate&panel/background.png);
     background-size: cover;
-    background-position: center;
+        background-position: center;
+}
+
+.header{
+    height: auto !important;
+}
+.header__list{
+    width: 100%;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+main {
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,7 +37,7 @@ h1 {
     text-transform: uppercase;
     font-size: 44px;
     text-align: center;
-    margin-bottom: 8vh;
+    margin: 4vh 0;
 }
 
 .login-form {
@@ -106,7 +117,6 @@ h1 {
 @media screen and (max-width: 640px) {
     h1 {
         font-size: 36px;
-        margin-bottom: 4vh;
     }
 
     .login-label img {
