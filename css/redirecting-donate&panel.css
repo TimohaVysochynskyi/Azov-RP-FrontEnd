@@ -113,11 +113,16 @@ h1 {
     .login-label {
         width: 90vw;
     }
+    h1 {
+        font-size: 42px;
+        margin-top: 8vh;
+    }
 }
 
 @media screen and (max-width: 640px) {
     h1 {
         font-size: 36px;
+        margin-top: 8vh;
     }
 
     .login-label img {
