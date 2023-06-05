@@ -24,6 +24,13 @@ body {
     justify-content: center;
     margin: 10px 0px;
 }
+.header__logo-wrapper{
+    width: 100%;
+}
+.header__logo-title{
+    margin: 0;
+    margin-left: 15px;
+}
 
 main {
     height: 60vh;
