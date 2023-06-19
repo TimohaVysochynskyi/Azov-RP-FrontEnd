@@ -114,6 +114,24 @@ h1 {
 }
 
 
+.success-tick-img{
+    width: 9vw;
+    height: 9vw;
+    object-fit: cover;
+    border-radius: 4.5vw;
+    border: 2px solid #00863835;
+    box-shadow: 2px 2px 6px #00864a77;
+}
+.success-title{
+    margin-top: 5%;
+    text-align: center;
+}
+.success-text{
+    margin-top: 2%;
+    font-size: 18px;
+    text-align: center;
+}
+
 
 /**** ADAPTIVE STYLES ****/
 @media screen and (max-width: 769px) {
