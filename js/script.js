@@ -75,3 +75,19 @@ playButton.addEventListener("click", function () {
 video.onended = function () {
   playButton.innerHTML = play;
 };
+
+function showRoulette1() {
+  $("#roulette1").fadeIn("fast");
+  $("#roulette2").css("display", "none");
+  $("#roulette3").css("display", "none");
+}
+function showRoulette2() {
+  $("#roulette1").css("display", "none");
+  $("#roulette2").fadeIn("fast");
+  $("#roulette3").css("display", "none");
+}
+function showRoulette3() {
+  $("#roulette1").css("display", "none");
+  $("#roulette2").css("display", "none");
+  $("#roulette3").fadeIn("fast");
+}
